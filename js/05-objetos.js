@@ -35,3 +35,24 @@ console.log("Telefone: "+cliente.telefones[1]);
 
 // Acessando uma propriedade que também é um objeto
 console.log("Altura: "+cliente.medidas.altura);
+
+// Exemplo 03: Array de objetos
+let livros = [  
+    {
+        titulo: "Sonetos",
+        autor: "Shakespeare",
+    },
+    {
+        titulo: "Macbeth",
+        autor: "Shakespeare",
+    },
+    {
+        titulo: "Romeu e Julieta",
+        autor: "Shakespeare ",
+    }
+
+]; 
+
+// Macbeth (escrito por Shakespeare) é uma tragédia sobre um regicídio e suas consequências.
+
+console.log(`${livros[1].titulo} (escrito por: ${livros[1].autor}) é uma tragédia sobre um regicídio e suas consequências`);
