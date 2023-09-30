@@ -16,3 +16,10 @@ if (salario < 1500) {
 
 console.log(`O funcionario: ${funcionario} tem o salário de: ${salario}`);
 console.log(`Portanto receberá um reajuste de: ${novo_salario.toFixed("R$",2)}`);
+
+    console.log(novo_salario.toLocaleString("pt-br", {
+        style: "currency",
+        currency: "BRL"
+    }
+    
+    ));
