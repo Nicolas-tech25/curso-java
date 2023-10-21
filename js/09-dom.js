@@ -41,5 +41,48 @@ console.log(varios);
 // Alterando o conteúdo
 legenda.textContent = "Dom -Hierarquia Geral";
 
-sobreFront.textContent = "<i>Front-end</i>";
+//Alterando suporte Html
+sobreFront.innerHTML = "<i>Front-end</i>";
 
+
+// Css vai javascript
+backEnd.style.color = "red";
+backEnd.style.textAlign = "center";
+
+
+// css com classes
+titulo.classList.add("destaque");
+
+let listaDeEditores = [
+    "VsCode",
+    "Notpad++",
+    "Sublime Text",
+    "Atom",
+    "Dreamweaver",
+    "Photoshop",
+    "word"
+];
+
+// Selecionando lista vazia dentro do classe
+const lista = document.querySelector(".lista");
+console.log(lista);
+
+//percorrer o array usando loop for/of
+for (let programa of listaDeEditores) {
+    // 1) Criar um novo elemento <li>
+    let item = document.createElement("li");
+
+    // 2) Adicionar conteúdo ao novo elemento
+    item.innerHTML = programa;
+
+    // 3) Adicionar á lista
+    lista.appendChild(item);
+}
+
+/*  Adicionando atributo a diversos elementos */
+ const linksreferencia = document.querySelectorAll(".referencias li a");
+ console.log(linksreferencia);
+
+ for (let link of linksreferencia) {
+    link.setAttribute("target", "_blank"); 
+ }
