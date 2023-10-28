@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JavaScript - Eventos</title>
+
+<style>
+   #janela-modal{
+    border-color: brown;
+    border-width: 10px;
+    border-radius: 12px;
+    width: 300px;
+    text-align: center;
+    top: 100px;
+   }
+
+   /* Estilizar o plano de fundo do dialog aberto */
+   ::backdrop{
+    background-color: rgb(0, 0,0,0.6);
+    /* background-image: url(imagem.jpg);
+    background-size: cover;
+    background-attachment: fixed; */
+   }
+
+   .modo-noturno{
+        background-color: rgb(63, 63, 63);
+        color: aliceblue;
+        font-family: verdana;
+   }
+    
+</style>
+
+</head>
+<body>
+    <h1>Eventos</h1>
+    <p>Eventos são interações/fenômenos que ocorrem na página. Ao monitorar e manipular eventos, o JS pode reagir ao que acontece.</p>
+    <hr>
+
+    <h2 id="exemplo01">Exemplo 01: Detectando eventos</h2>
+    <p id="mensagem01"></p>
+
+    <hr>
+
+    <h2>Exemplo 02: Detectando "saída" do site</h2>
+    <p id="mensagem02"></p>
+
+    <dialog id="janela-modal">
+        <h3>Poxa 🙀🙀</h3>
+        <p>ja vai sair?</p>
+        <button>Fechar</button>
+    </dialog>
+
+
+    <hr>
+
+    <h2>Exemplo 03: Modo Noturno</h2>
+    <button id="noturno">Ativar</button>  
+
+    <hr>
+
+
+
+    <h2>Referências</h2>
+    <ul>
+        <li><b>Eloquent JavaScript:</b> 
+			<a href="https://github.com/braziljs/eloquente-javascript/blob/master/chapters/14-manipulando-eventos.md" target="_blank">
+			Manipulando Eventos</a>
+		</li>
+        <li><b>MDN:</b> 
+			<a href="https://developer.mozilla.org/pt-BR/docs/Aprender/JavaScript/Elementos_construtivos/Events" target="_blank">
+			Introdução a eventos
+			</a>
+		</li>
+    </ul>
+
+   <script src="js/10-eventos.js"></script>
+
+</body>
+</html>
