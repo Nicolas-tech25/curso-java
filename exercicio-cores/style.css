@@ -1,0 +1,22 @@
+body {
+ font-family: verdana;
+}
+
+button {
+    width: 200px;
+    height: 200px;
+    margin: 1rem;
+    border-radius: 100px;
+}
+
+#botaoA {
+    background-color: dodgerblue;
+}
+
+#botaoV {
+    background-color: green;
+}
+
+#botaoL {
+    background-color: darkorange;
+}
