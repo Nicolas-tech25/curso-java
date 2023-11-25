@@ -26,14 +26,19 @@
 
       <p>
         <label for="lista-de-musicas">Músicas</label> <br>
-        <select name="lista-de-musicas" id="lista-de-musicas">
+        <select name="lista-de-musicas" id="lista-de-musicas" required>
           <option value=""></option>
-          <option value="musicas/bytor.mp3 ">By-tor And Snow Dog</option>
-          <option value="musicas/subdivisions.mp3 "> Subdivision</option>
-          <option value="musicas/the-garden.mp3 ">The Garden</option>
+          <option value="musicas/bytor.mp3 " data-imagem="capas/fly-by-night.jpg" >By-tor And Snow Dog</option>
+          <option value="musicas/subdivisions.mp3" data-imagem="capas/signals.jpg"> Subdivision</option>
+          <option value="musicas/the-garden.mp3" data-imagem="capas/clockwork-angels.png">The Garden</option>
           
         </select>
       </p>
+
+      <figure hidden>
+        <img src="" alt="">
+        <figcaption></figcaption>
+      </figure>
 
 	  <audio controls></audio>
       
